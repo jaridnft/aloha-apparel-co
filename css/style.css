@@ -125,7 +125,7 @@ body {
     text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 51.5%;
+    top: 34.5%;
     left: 50%;
     width: 75%;
     padding-left: 12px;
@@ -146,7 +146,7 @@ body {
 }
 
 .about {
-    height: 262px;
+    height: 230px;
     padding-top: 56px;
     padding-bottom: 56px;
     padding-left: 12px;
@@ -161,7 +161,7 @@ body {
     margin: 0;
     font-size: 36px;
     font-family: "Playfair Display",serif;
-    margin-bottom: 21px; 
+    margin-bottom: 20px; 
 }
 
 em {
@@ -291,7 +291,7 @@ em {
 }
 
 .updates {
-    background-image: linear-gradient(rgba(0,0,0,.21),rgba(0,0,0,.21)),url('../images/wave-bkgd.jpg');
+    background-image: linear-gradient(rgba(0,0,0,.18),rgba(0,0,0,.18)),url('../images/wave-bkgd.jpg');
     background-size: 1500px;
     background-position: 50% 97%;
     height: 332px;
@@ -330,14 +330,19 @@ em {
     width: 98%;
     padding-top: 10.5px;
     padding-bottom: 11.5px;
+    padding-left: 30px;
     border-radius: 25px;
     border: none;
+}
+
+.updates input:focus{
+    outline: none;
 }
 
 .updates input[type=email]::-webkit-input-placeholder {
     font-size: 14px;
     font-family: Raleway-Light, serif; 
-    padding-left: 25px; 
+    margin-left: 25px; 
 }
 
 .updates input[type=submit] {
@@ -440,7 +445,7 @@ em {
     }
 
     .header {
-        height: 83px;
+        height: 84px;
     }
 
     .header-logo-main {
@@ -465,16 +470,16 @@ em {
     }
 
     .hero-banner {
-        margin-top: 61px;
-        height: 422px;
+        margin-top: 84px;
+        height: 400px;
         padding-top: 72px;
         padding-bottom: 72px;
-        background-size: 620px, 150px;
-        background-position: 60% 103%, 50% 85px;
+        background-size: 700px, 150px;
+        background-position: 60% 0%, 50% 60px;
     }
 
     .hero-banner-text {
-        top: 46.5%;
+        top: 31%;
     }
 
     .hero-banner-text p:first-child {
@@ -491,11 +496,14 @@ em {
     }
 
     .about h3 {
+        padding-top: 6px;
+        padding-bottom: 1px;
         font-size: 44px;
     }
 
     .about p {
         font-size: 18px;
+        line-height: 35px;
     }
 
     .shop {
@@ -514,17 +522,17 @@ em {
     }
 
     .shop .rectangle.mens {
-        margin-right: 4px;
+        margin-right: 0;
     }
 
     .shop .square.trends {
-        margin-left: 4px;
-        margin-right: 4px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .shop .square.glasses {
-        margin-right: 0px;
-        margin-left: 4px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .shop .square {
@@ -533,19 +541,50 @@ em {
     }
 
     .shop .square.sale {
-        margin-left: -12px;
-        margin-right: 4px;
+        margin: 0;
     }
 
     .shop .square.bags {
-        margin-left: 4px;
-        margin-right: 4px;
+        margin: 0;
     }
 
     .shop .rectangle.womens {
-        margin-top: 0;
-        margin-left: 4px;
-        margin-right: -4px;
+        margin: 0;
+    }
+    
+    .updates {
+        height: 379px;
+    }
+
+    .updates h3 {
+        font-size: 44px;
+        padding-top: 5px;
+    }
+
+    .updates p {
+        font-size: 18px;
+        line-height: 35px;
+    }
+
+    .updates form {
+        padding-top: 8px;
+    }
+
+    .updates input[type=email] {
+        width: 75%;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+    .updates input[type=email]::-webkit-input-placeholder {
+        font-size: 16px;
+    }
+    
+    .updates input[type=submit] {
+        font-size: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: -125px;
     }
 
     .footer-social-text {
@@ -557,7 +596,7 @@ em {
 
 @media screen and (min-width: 615px){
     .about {
-        height: 262px;
+        height: 263px;
     }
 }
 
