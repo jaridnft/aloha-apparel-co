@@ -1,0 +1,568 @@
+/* screen-reader preset for accessibility */
+
+.header-screen-reader {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/* beginning of my CSS */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    line-height: 1;
+    font-size: 14px;
+    font-family: Raleway-Medium, serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 117px;
+    width: 100%;
+    padding-bottom: 0.4rem;
+    padding-top: 0.7rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    z-index: 999;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.header-logo-main {
+    flex-wrap: nowrap;
+    width: 50%;
+    padding-bottom: .4rem;
+}
+
+.header-logo-main img {
+    width: 120px;
+    display: block;
+}
+
+.header-nav {
+    flex-wrap: wrap;
+    order: 1;
+    width: 100%;
+    border-top: 1px solid #d7d7d7;
+}
+
+.header-nav ul { 
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    padding-left: 0;
+}
+
+.header-nav li {
+    padding-right: .8rem;
+    padding-left: .8rem;
+}
+
+.header-nav a{
+    color: #e2574c;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.header-nav a:hover{
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #b64036;
+}
+
+.header-logo-shopping {
+    flex-wrap: nowrap;
+    text-align: right;
+    width: 50%;
+    background-color: #fff;
+    padding-bottom: .4rem;
+}
+
+.header-logo-shopping img {
+    height: 50px;
+    padding-right: 20px;              /* TODO: fix workaround for odd shopping cart positioning */
+}
+
+.header-logo-shopping img {
+    cursor: pointer;
+}
+
+.hero-banner {
+    background-image: linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25)),url("../images/banner-girl.png"), url("../images/flower-bkgd.jpg");
+    background-repeat: repeat, no-repeat;
+    background-position: 60% 103%, 50% 60px;
+    background-size: cover, 150px;  
+    height: 399px; 
+    width: 100%;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    margin-top: 117px;
+}
+
+.hero-banner-text {                                         /* text-shadow taken from example */
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 51.5%;
+    left: 50%;
+    width: 75%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.hero-banner-text p:first-child {
+    font-size: .9rem;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 21px;
+}
+
+.hero-banner-text p:nth-child(2) {
+    font-family: "Playfair Display",serif;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.about {
+    height: 262px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 4px;
+    text-align: center;
+    font-family: Raleway-Light, serif;
+    font-size: 16px;
+}
+
+.about h3 {
+    margin: 0;
+    font-size: 36px;
+    font-family: "Playfair Display",serif;
+    margin-bottom: 21px; 
+}
+
+em {
+    font-weight: 100;
+}
+
+.about p {
+    line-height: 30px;
+    margin: 0;
+}
+
+.shop {
+}
+
+.shop  {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    color: white;
+    font-size: 23px;
+}
+
+.shop a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 46%;
+}
+
+.shop a:hover {
+    cursor: pointer;
+    color: wheat;
+}
+
+.shop .rectangle {
+    width: 100%;
+    padding-bottom: 49.1%;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 8px;
+    background-size: cover;
+    background-position: 50% 97%;
+}
+
+.shop .rectangle.mens {
+    background-image: linear-gradient(rgba(0,0,0,.21),rgba(0,0,0,.21)),url('../images/mens-category.jpg');
+    margin-top: 0;
+    margin-bottom: 8px;
+    margin-right: -2px;
+}
+
+.shop .rectangle.womens {
+    background-image: linear-gradient(rgba(0,0,0,.21),rgba(0,0,0,.21)),url('../images/womens-category.jpg');
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.shop .square {
+    width: 50%;
+    position: relative;
+    padding-bottom: 48.3%;
+    background-size: cover;
+}
+
+.shop .square.trends {
+    background-image: linear-gradient(rgba(0,0,0,.21),rgba(0,0,0,.21)),url('../images/trends-category.jpg'); 
+    margin-top: 0;
+    margin-bottom: 8px;
+    margin-left: -4px;
+    margin-right: 4px;
+}
+
+.shop .square.glasses {
+    background-image: linear-gradient(rgba(0,0,0,.21),rgba(0,0,0,.21)),url('../images/glasses-category.jpg'); 
+    margin-top: 0;
+    margin-bottom: 8px;
+    margin-left: 4px;
+    margin-right: -4px;
+}
+
+.shop .square.sale {
+    background-image: linear-gradient(rgba(0,0,0,.21),rgba(0,0,0,.21)),url('../images/sale-category.jpg'); 
+    margin-bottom: 0;
+    margin-top: 0px;
+    margin-left: -4px;
+    margin-right: 4px;
+}
+
+.shop .square.bags {
+    background-image: linear-gradient(rgba(0,0,0,.21),rgba(0,0,0,.21)),url('../images/bags-category.jpg'); 
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 4px;
+    margin-right: -4px;
+}
+
+.featured h3 {
+    font-size: 36px;
+    font-family: "Playfair Display",serif;
+    text-align: center;
+}
+
+.featured ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+.featured-headings-product-type {
+    color: #969696;
+    font-size: 11px;
+}
+
+.featured-headings-product-description {
+    font-family: "Playfair Display",serif;
+    color: #e2574c;
+    font-size: 22px;
+}
+
+.featured-headings-product-price {
+    color: #969696;
+}
+
+.updates {
+    background-image: linear-gradient(rgba(0,0,0,.21),rgba(0,0,0,.21)),url('../images/wave-bkgd.jpg');
+    background-size: 1500px;
+    background-position: 50% 97%;
+    height: 332px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    padding-left: 12px;
+    padding-right: 12px;
+    color: white;
+    font-size: 16px;
+    text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+}
+
+.updates h3 {
+    font-size: 36px;
+    font-family: "Playfair Display",serif;
+    text-align: center;
+    margin-bottom: 21px;
+    margin-top: 0px;
+}
+
+.updates p {
+    text-align: center;
+    line-height: 30px;
+    font-family: Raleway-Light, serif;
+    margin: 0;
+}
+
+.updates form {
+    text-align: center;
+    padding-left: 29px;
+    padding-right: 29px;
+    margin-top: 30px;
+}
+
+.updates input[type=email] {
+    width: 98%;
+    padding-top: 10.5px;
+    padding-bottom: 11.5px;
+    border-radius: 25px;
+    border: none;
+}
+
+.updates input[type=email]::-webkit-input-placeholder {
+    font-size: 14px;
+    font-family: Raleway-Light, serif; 
+    padding-left: 25px; 
+}
+
+.updates input[type=submit] {
+    background-color: #e2574c;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 21px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-radius: 25px;
+    border: none;
+    margin-left: -116px;
+}
+
+.updates input[type=submit]:hover {
+    background-color: #b64036;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-flow: column;
+    color: white;
+    font-family: "Playfair Display",serif;
+    line-height: 20px;
+    background-color: #242424;
+    height: 302px;
+    margin-top: 8px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+
+.footer-info {
+    text-align: center;
+}
+
+.footer-info a {
+    color: white;
+}
+
+.footer-info a:hover {
+    color: #b64036;
+    cursor: pointer;
+}
+
+.footer-info p {
+    margin: 0;
+}
+
+.footer-info p:nth-child(2) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.footer-info p:nth-child(3) {
+    color: #969696;
+}
+
+.footer-social {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 28px;
+    margin-bottom: 0px;
+    padding-left: 0;
+    padding-top: 13px;
+}
+
+.footer-social li {
+    width: 28px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer-social a {
+    color: white;
+}
+
+.footer-social a:hover {
+    color: #b64036;
+    cursor: pointer;
+}
+
+.footer-social-text {
+    visibility: hidden;
+}
+
+/* phablet sizing */
+
+@media screen and (min-width: 600px){
+    body {
+        font-size: 16px;
+    }
+
+    .header {
+        height: 83px;
+    }
+
+    .header-logo-main {
+        width: 20%;
+    }
+
+    .header-nav {
+        flex-wrap: nowrap;
+        order: 0;
+        width: 50%;  
+        border-top: none;
+        font-size: 14px;
+    }
+
+    .header-nav li {
+        padding-right: .6rem;
+        padding-left: .55rem;
+    }
+
+    .header-logo-shopping {
+        width: 20%;
+    }
+
+    .hero-banner {
+        margin-top: 61px;
+        height: 422px;
+        padding-top: 72px;
+        padding-bottom: 72px;
+        background-size: 620px, 150px;
+        background-position: 60% 103%, 50% 85px;
+    }
+
+    .hero-banner-text {
+        top: 46.5%;
+    }
+
+    .hero-banner-text p:first-child {
+        font-size: 1rem;
+        margin-bottom: 26px;
+    }
+
+    .hero-banner-text p:nth-child(2) {
+        font-size: 2.5rem;
+    }
+
+    .about {
+        height: 299px;
+    }
+
+    .about h3 {
+        font-size: 44px;
+    }
+
+    .about p {
+        font-size: 18px;
+    }
+
+    .shop {
+        font-size: 30px;
+    }
+
+    .shop a {
+        top: 39%;
+    }
+
+    .shop .rectangle {
+        width: 50%;
+        padding-bottom: 24.7%;
+        margin-top: 0;
+        margin-bottom: 8px;
+    }
+
+    .shop .rectangle.mens {
+        margin-right: 4px;
+    }
+
+    .shop .square.trends {
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+
+    .shop .square.glasses {
+        margin-right: 0px;
+        margin-left: 4px;
+    }
+
+    .shop .square {
+        width: 25%;
+        padding-bottom: 24.7%;
+    }
+
+    .shop .square.sale {
+        margin-left: -12px;
+        margin-right: 4px;
+    }
+
+    .shop .square.bags {
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+
+    .shop .rectangle.womens {
+        margin-top: 0;
+        margin-left: 4px;
+        margin-right: -4px;
+    }
+
+    .footer-social-text {
+        visibility: visible;
+    }
+}
+
+/* tablet sizing */
+
+@media screen and (min-width: 615px){
+    .about {
+        height: 262px;
+    }
+}
+
+/* desktop sizing */
+
+@media screen and (min-width: 950px){
+
+}
