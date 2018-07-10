@@ -264,6 +264,7 @@ em {
     font-size: 36px;
     font-family: "Playfair Display REgular",serif;
     text-align: center;
+    padding-top: 20px;
 }
 
 .featured ul{
@@ -586,6 +587,8 @@ em {
     .updates p {
         font-size: 18px;
         line-height: 35px;
+        margin: auto;
+        max-width: 680px;
     }
 
     .updates form {
@@ -618,8 +621,9 @@ em {
 
     .footer-info {
         width: 50%;
+        max-width: 520px;
         text-align: left;
-        padding-left: 15px;
+        padding-left: 18px;
     }
 
     .footer-info p {
@@ -637,6 +641,7 @@ em {
         padding-top: 0;
         padding-right: 45px;
         width: 50%;
+        max-width: 520px;
         font-family: 'Playfare Display Regular', sans-serif;
         font-weight: 100;
     }
@@ -720,5 +725,12 @@ em {
 
     .hero-banner-text p:nth-child(2) {
         font-size: 66px;
+    }
+
+    .updates {
+        background-size: 1500px;
+        background-position: 50% 97%;
+        background-repeat: no-repeat;
+        background-color: #96969660;
     }
 }
