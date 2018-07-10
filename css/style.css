@@ -15,6 +15,7 @@
 
 * {
     box-sizing: border-box;
+    max-width: 1680px;
 }
 
 html {
