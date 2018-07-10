@@ -134,9 +134,9 @@ em {
     color: #fff;
     text-align: center;
     text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
-    position: absolute;
+    position: relative;
     transform: translate(-50%, -50%);
-    top: 34.5%;
+    top: 50%;
     left: 50%;
     width: 75%;
 }
@@ -479,10 +479,6 @@ em {
         padding-bottom: 72px;
         background-size: 700px, 150px;
         background-position: 60% 0%, 50% 60px;
-    }
-
-    .hero-banner-text {
-        top: 29.5%;
     }
 
     .hero-banner-text p:first-child {
