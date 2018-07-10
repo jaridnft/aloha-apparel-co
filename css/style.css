@@ -24,7 +24,18 @@ html {
 body {
     line-height: 1;
     font-size: 14px;
-    font-family: Raleway-Medium, serif;
+    font-family: 'Raleway Medium', sans-serif;
+}
+
+strong {
+    font-family: 'Playfair Display Bold', serif;
+    font-size: 34px;
+}
+
+em {
+    font-family: 'Playfair Display Italic', serif;
+    font-size: 36px;
+    font-weight: 100;
 }
 
 .header {
@@ -128,8 +139,6 @@ body {
     top: 34.5%;
     left: 50%;
     width: 75%;
-    padding-left: 12px;
-    padding-right: 12px;
 }
 
 .hero-banner-text p:first-child {
@@ -140,7 +149,7 @@ body {
 }
 
 .hero-banner-text p:nth-child(2) {
-    font-family: "Playfair Display",serif;
+    font-family: "Playfair Display Regular",serif;
     font-size: 1.8rem;
     margin: 0;
 }
@@ -153,27 +162,18 @@ body {
     padding-right: 12px;
     margin-bottom: 4px;
     text-align: center;
-    font-family: Raleway-Light, serif;
+    font-family: 'Raleway Light', sans-serif;
     font-size: 16px;
 }
 
 .about h3 {
     margin: 0;
-    font-size: 36px;
-    font-family: "Playfair Display",serif;
     margin-bottom: 20px; 
-}
-
-em {
-    font-weight: 100;
 }
 
 .about p {
     line-height: 30px;
     margin: 0;
-}
-
-.shop {
 }
 
 .shop  {
@@ -266,7 +266,7 @@ em {
 
 .featured h3 {
     font-size: 36px;
-    font-family: "Playfair Display",serif;
+    font-family: "Playfair Display REgular",serif;
     text-align: center;
 }
 
@@ -281,7 +281,7 @@ em {
 }
 
 .featured-headings-product-description {
-    font-family: "Playfair Display",serif;
+    font-family: "Playfair Display Regular",serif;
     color: #e2574c;
     font-size: 22px;
 }
@@ -305,17 +305,16 @@ em {
 }
 
 .updates h3 {
-    font-size: 36px;
-    font-family: "Playfair Display",serif;
     text-align: center;
     margin-bottom: 21px;
     margin-top: 0px;
+    text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
 }
 
 .updates p {
     text-align: center;
     line-height: 30px;
-    font-family: Raleway-Light, serif;
+    font-family: 'Raleway Light', sans-serif;
     margin: 0;
 }
 
@@ -328,8 +327,8 @@ em {
 
 .updates input[type=email] {
     width: 98%;
-    padding-top: 10.5px;
-    padding-bottom: 11.5px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     padding-left: 30px;
     border-radius: 25px;
     border: none;
@@ -341,7 +340,7 @@ em {
 
 .updates input[type=email]::-webkit-input-placeholder {
     font-size: 14px;
-    font-family: Raleway-Light, serif; 
+    font-family: 'Raleway Light', sans-serif; 
     margin-left: 25px; 
 }
 
@@ -350,12 +349,12 @@ em {
     color: white;
     cursor: pointer;
     font-size: 14px;
-    padding: 21px;
+    padding: 20.5px;
     padding-top: 9px;
     padding-bottom: 9px;
     border-radius: 25px;
     border: none;
-    margin-left: -116px;
+    margin-left: -115px;
 }
 
 .updates input[type=submit]:hover {
@@ -369,7 +368,7 @@ em {
     flex-direction: column;
     flex-flow: column;
     color: white;
-    font-family: "Playfair Display",serif;
+    font-family: "Playfair Display Regular",serif;
     line-height: 20px;
     background-color: #242424;
     height: 302px;
@@ -444,6 +443,10 @@ em {
         font-size: 16px;
     }
 
+    strong, em {
+        font-size: 40px;
+    }
+
     .header {
         height: 84px;
     }
@@ -479,16 +482,16 @@ em {
     }
 
     .hero-banner-text {
-        top: 31%;
+        top: 29.5%;
     }
 
     .hero-banner-text p:first-child {
         font-size: 1rem;
-        margin-bottom: 26px;
+        margin-bottom: 25px;
     }
 
     .hero-banner-text p:nth-child(2) {
-        font-size: 2.5rem;
+        font-size: 2.4rem;
     }
 
     .about {
@@ -523,16 +526,28 @@ em {
 
     .shop .rectangle.mens {
         margin-right: 0;
+        border-right-style: solid;
+        border-right-color: white;
+        border-right-width: 4px;
     }
 
     .shop .square.trends {
         margin-left: 0;
         margin-right: 0;
+        border-right-style: solid;
+        border-right-color: white;
+        border-right-width: 4px;
+        border-left-style: solid;
+        border-left-color: white;
+        border-left-width: 4px;
     }
 
     .shop .square.glasses {
         margin-left: 0;
         margin-right: 0;
+        border-left-style: solid;
+        border-left-color: white;
+        border-left-width: 4px;
     }
 
     .shop .square {
@@ -542,14 +557,26 @@ em {
 
     .shop .square.sale {
         margin: 0;
+        border-right-style: solid;
+        border-right-color: white;
+        border-right-width: 4px;
     }
 
     .shop .square.bags {
         margin: 0;
+        border-left-style: solid;
+        border-left-color: white;
+        border-left-width: 4px;
+        border-right-style: solid;
+        border-right-color: white;
+        border-right-width: 4px;
     }
 
     .shop .rectangle.womens {
         margin: 0;
+        border-left-style: solid;
+        border-left-color: white;
+        border-left-width: 4px;
     }
     
     .updates {
@@ -567,13 +594,15 @@ em {
     }
 
     .updates form {
-        padding-top: 8px;
+        padding-top: 35px;
+        max-width: 700px;
+        margin: auto;
     }
 
     .updates input[type=email] {
         width: 75%;
-        padding-top: 14px;
-        padding-bottom: 14px;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 
     .updates input[type=email]::-webkit-input-placeholder {
@@ -582,9 +611,56 @@ em {
     
     .updates input[type=submit] {
         font-size: 16px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 11px;
+        padding-bottom: 11px;
         margin-left: -125px;
+    }
+
+    .footer {
+        height: 287px;
+        flex-direction: row;
+    }
+
+    .footer-info {
+        width: 50%;
+        text-align: left;
+        padding-left: 15px;
+    }
+
+    .footer-info p {
+        line-height: 24px;
+    }
+
+    .footer-info p:nth-child(2) {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .footer-social {
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 0;
+        padding-right: 45px;
+        width: 50%;
+        font-family: 'Playfare Display Regular', sans-serif;
+        font-weight: 100;
+    }
+
+    .footer-social li {
+        width: 110px;
+        text-align: left;
+        padding-top: 5.5px;
+        padding-bottom: 5.5px;
+        font-size: 16px;
+    }
+
+    .fab {
+        width: 30px;
+    }
+
+    .footer-social a {
+        text-decoration: none;
+        font-size: 18px;
     }
 
     .footer-social-text {
@@ -602,6 +678,6 @@ em {
 
 /* desktop sizing */
 
-@media screen and (min-width: 950px){
+@media screen and (min-width: 1240px){
 
 }
