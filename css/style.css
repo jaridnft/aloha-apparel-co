@@ -34,7 +34,7 @@ strong {
 
 em {
     font-family: 'Playfair Display Italic', serif;
-    font-size: 36px;
+    font-size: 34px;
     font-weight: 100;
 }
 
@@ -111,10 +111,6 @@ em {
 
 .header-logo-shopping img {
     height: 50px;
-    padding-right: 20px;              /* TODO: fix workaround for odd shopping cart positioning */
-}
-
-.header-logo-shopping img {
     cursor: pointer;
 }
 
@@ -273,6 +269,7 @@ em {
 .featured ul{
     list-style-type: none;
     text-align: center;
+    padding-left: 0;
 }
 
 .featured-headings-product-type {
@@ -503,6 +500,8 @@ em {
     .about p {
         font-size: 18px;
         line-height: 35px;
+        max-width: 680px;
+        margin: auto;
     }
 
     .shop {
@@ -675,5 +674,51 @@ em {
 /* desktop sizing */
 
 @media screen and (min-width: 1240px){
+    .header {
+        height: 97px;
+        padding-top: 16px;
+        padding-bottom: 8px;
+        justify-content: center;
+    }
 
+    .header-logo-main {
+        width: 190px;
+    }
+
+    .header-logo-main img {
+        width: 160px;
+        padding-bottom: 5px;
+    }
+
+    .header-nav {
+        font-size: 16px;
+        width: 797px;
+    }
+
+    .header-nav li {
+        padding: 18px;
+    }
+
+    .header-logo-shopping {
+        width: 190px;
+    }
+    .header-logo-shopping img {
+        width: 62px;
+        height: 62px;
+    }
+
+    .hero-banner {
+        height: 550px;
+        margin-top: 97px;
+        background-size: 850px, 250px;
+        background-position: 50% 0%, 50% 60px;
+    }
+
+    .hero-banner-text p:first-child {
+        margin-bottom: 20px;
+    }
+
+    .hero-banner-text p:nth-child(2) {
+        font-size: 66px;
+    }
 }
