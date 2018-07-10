@@ -203,23 +203,42 @@ em {
     width: 100%;
     padding-bottom: 49.1%;
     position: relative;
-    margin-top: 0;
-    margin-bottom: 8px;
     background-size: cover;
     background-position: 50% 97%;
 }
 
 .shop .rectangle.mens {
     background-image: linear-gradient(rgba(0,0,0,.21),rgba(0,0,0,.21)),url('../images/mens-category.jpg');
-    margin-top: 0;
-    margin-bottom: 8px;
-    margin-right: -2px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-bottom-width: 4px;
+    margin-bottom: 0;
 }
 
-.shop .rectangle.womens {
-    background-image: linear-gradient(rgba(0,0,0,.21),rgba(0,0,0,.21)),url('../images/womens-category.jpg');
-    margin-top: 8px;
-    margin-bottom: 0;
+.shop .square.trends {
+    background-image: linear-gradient(rgba(0,0,0,.21),rgba(0,0,0,.21)),url('../images/trends-category.jpg'); 
+    border-top-style: solid;
+    border-top-color: white;
+    border-top-width: 4px;
+    border-right-style: solid;
+    border-right-color: white;
+    border-right-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-bottom-width: 4px;
+}
+
+.shop .square.glasses {
+    background-image: linear-gradient(rgba(0,0,0,.21),rgba(0,0,0,.21)),url('../images/glasses-category.jpg'); 
+    border-top-style: solid;
+    border-top-color: white;
+    border-top-width: 4px;
+    border-left-style: solid;
+    border-left-color: white;
+    border-left-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-bottom-width: 4px;
 }
 
 .shop .square {
@@ -229,36 +248,37 @@ em {
     background-size: cover;
 }
 
-.shop .square.trends {
-    background-image: linear-gradient(rgba(0,0,0,.21),rgba(0,0,0,.21)),url('../images/trends-category.jpg'); 
-    margin-top: 0;
-    margin-bottom: 8px;
-    margin-left: -4px;
-    margin-right: 4px;
-}
-
-.shop .square.glasses {
-    background-image: linear-gradient(rgba(0,0,0,.21),rgba(0,0,0,.21)),url('../images/glasses-category.jpg'); 
-    margin-top: 0;
-    margin-bottom: 8px;
-    margin-left: 4px;
-    margin-right: -4px;
-}
-
 .shop .square.sale {
     background-image: linear-gradient(rgba(0,0,0,.21),rgba(0,0,0,.21)),url('../images/sale-category.jpg'); 
-    margin-bottom: 0;
-    margin-top: 0px;
-    margin-left: -4px;
-    margin-right: 4px;
+    border-top-style: solid;
+    border-top-color: white;
+    border-top-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-bottom-width: 4px;
+    border-right-style: solid;
+    border-right-color: white;
+    border-right-width: 4px;
 }
 
 .shop .square.bags {
-    background-image: linear-gradient(rgba(0,0,0,.21),rgba(0,0,0,.21)),url('../images/bags-category.jpg'); 
-    margin-bottom: 0;
-    margin-top: 0;
-    margin-left: 4px;
-    margin-right: -4px;
+    background-image: linear-gradient(rgba(0,0,0,.21),rgba(0,0,0,.21)),url('../images/bags-category.jpg');
+    border-top-style: solid;
+    border-top-color: white;
+    border-top-width: 4px; 
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-bottom-width: 4px;
+    border-left-style: solid;
+    border-left-color: white;
+    border-left-width: 4px;
+}
+
+.shop .rectangle.womens {
+    background-image: linear-gradient(rgba(0,0,0,.21),rgba(0,0,0,.21)),url('../images/womens-category.jpg');
+    border-top-style: solid;
+    border-top-color: white;
+    border-top-width: 4px;
 }
 
 .featured h3 {
@@ -531,20 +551,19 @@ em {
     .shop .square.trends {
         margin-left: 0;
         margin-right: 0;
-        border-right-style: solid;
-        border-right-color: white;
-        border-right-width: 4px;
         border-left-style: solid;
         border-left-color: white;
         border-left-width: 4px;
+        border-bottom-style: solid;
+        border-bottom-color: white;
+        border-bottom-width: 4px;
+        border-top-style: none;
     }
 
     .shop .square.glasses {
         margin-left: 0;
         margin-right: 0;
-        border-left-style: solid;
-        border-left-color: white;
-        border-left-width: 4px;
+        border-top-style: none;
     }
 
     .shop .square {
@@ -557,6 +576,7 @@ em {
         border-right-style: solid;
         border-right-color: white;
         border-right-width: 4px;
+        border-bottom-style: none;
     }
 
     .shop .square.bags {
@@ -567,6 +587,7 @@ em {
         border-right-style: solid;
         border-right-color: white;
         border-right-width: 4px;
+        border-bottom-style: none;
     }
 
     .shop .rectangle.womens {
