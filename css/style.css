@@ -695,6 +695,8 @@ input[type=submit] {
 
     .carousel-cell.is-selected {
         width: 50%;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .carousel-cell.first-cell {
@@ -862,6 +864,26 @@ input[type=submit] {
 
     .hero-banner-text p:nth-child(2) {
         font-size: 66px;
+    }
+
+    .carousel {
+        max-width: 1240px;
+        margin: auto;
+    }
+
+    .carousel-cell {
+        width: 25%;
+        max-width: 310px;
+    }
+
+    .carousel-cell img {
+        width: 246px;
+        height: 246px;
+    }
+
+    .carousel-cell.is-selected {
+        width: 25%;
+        max-width: 310px;
     }
 
     .updates {
