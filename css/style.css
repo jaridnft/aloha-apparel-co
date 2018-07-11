@@ -288,10 +288,22 @@ em {
     padding-top: 20px;
 }
 
-.featured ul{
-    list-style-type: none;
+.carousel {
     text-align: center;
-    padding-left: 0;
+    draggable: true;
+    border-top-style: none;
+    height: 506px;
+    z-index: 999;
+}
+
+.flickity-page-dots {
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+.flickity-viewport {
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .featured-headings-product-type {
