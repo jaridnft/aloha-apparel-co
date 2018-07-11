@@ -291,7 +291,7 @@ em {
 .carousel {
     text-align: center;
     border-top-style: none;
-    height: 545px;
+    height: 590px;
 }
 
 .carousel-cell {
@@ -327,7 +327,6 @@ em {
     list-style-type: disc;
     font-size: 32px;
     margin-top: 0;
-    margin-bottom: 0;
     padding-left: 70px;
 }
 
@@ -362,6 +361,22 @@ em {
 .featured-headings-product-price {
     color: #969696;
     margin: 0;
+    padding-bottom: 25px;
+}
+
+input[type=submit] {
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 20.5px;
+    padding-top: 7.75px;
+    padding-bottom: 7.75px;
+    border-radius: 25px;
+    border: none;
+}
+
+.carousel-cell input[type=submit] {
+    background-color:black;
 }
 
 .updates {
@@ -420,15 +435,7 @@ em {
 
 .updates input[type=submit] {
     background-color: #e2574c;
-    color: white;
-    cursor: pointer;
-    font-size: 14px;
-    padding: 20.5px;
-    padding-top: 8.5px;
-    padding-bottom: 7.5px;
-    border-radius: 25px;
-    border: none;
-    margin-left: -116px;
+    margin-left: -117px;
 }
 
 .updates input[type=submit]:hover {
@@ -654,17 +661,29 @@ em {
 
     .featured h3 {
         margin-top: 50px;
-        margin-bottom: 80px;
+        margin-bottom: 50px;
+    }
+
+    .featured-headings-product-type {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    
+    .featured-headings-product-description {
+        font-size: 24px;
+        margin-top: 10px;
+        margin-bottom: 25px;
     }
 
     .carousel {
-
+        max-height: 726px;
+        height: 100%;
     }
 
     .carousel-cell {
         width: 50%;
         max-height: 535px;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
 
     .carousel-cell img {
@@ -686,6 +705,11 @@ em {
     .carousel-cell.last-cell {
         padding-right: 0;
         padding-left: 0;
+    }
+
+    .flickity-page-dots {
+        margin-bottom: 30px;
+        margin-top: 30px;
     }
 
     .updates {
@@ -722,9 +746,9 @@ em {
     
     .updates input[type=submit] {
         font-size: 16px;
-        padding-top: 11px;
-        padding-bottom: 11px;
-        margin-left: -125px;
+        padding-top: 10px;
+        padding-bottom: 9.75px;
+        margin-left: -126px;
     }
 
     .footer {
