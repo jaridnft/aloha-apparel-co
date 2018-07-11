@@ -297,12 +297,13 @@ em {
 .carousel-cell {
     width: 100%;
     margin-top: 22px;
-    margin-bottom: 20px;
+    margin-bottom: 53px;
 }
 
 .carousel-cell img {
     margin-bottom: 12px;
-    width: 100%;
+    width: 320px;
+    height: auto;
 }
 
 .carousel-cell.first-cell {
@@ -325,7 +326,8 @@ em {
     color: #96969681;
     list-style-type: disc;
     font-size: 32px;
-    margin-top: 33px;
+    margin-top: 0;
+    margin-bottom: 0;
     padding-left: 70px;
 }
 
@@ -422,11 +424,11 @@ em {
     cursor: pointer;
     font-size: 14px;
     padding: 20.5px;
-    padding-top: 9.5px;
+    padding-top: 8px;
     padding-bottom: 8px;
     border-radius: 25px;
     border: none;
-    margin-left: -115px;
+    margin-left: -116px;
 }
 
 .updates input[type=submit]:hover {
