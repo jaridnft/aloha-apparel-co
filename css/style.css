@@ -379,6 +379,10 @@ input[type=submit] {
     background-color:black;
 }
 
+.carousel-cell input[type=submit]:hover {
+    background-color:rgba(0, 0, 0, 0.767);
+}
+
 .updates {
     background-image: linear-gradient(rgba(0,0,0,.18),rgba(0,0,0,.18)),url('../images/wave-bkgd.jpg');
     background-size: 1500px;
