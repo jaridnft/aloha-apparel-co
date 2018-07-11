@@ -302,6 +302,7 @@ em {
 
 .carousel-cell img {
     margin-bottom: 12px;
+    width: 100%;
 }
 
 .carousel-cell.first-cell {
@@ -422,7 +423,7 @@ em {
     font-size: 14px;
     padding: 20.5px;
     padding-top: 9px;
-    padding-bottom: 9px;
+    padding-bottom: 8px;
     border-radius: 25px;
     border: none;
     margin-left: -115px;
@@ -655,6 +656,7 @@ em {
     }
 
     .carousel {
+
     }
 
     .carousel-cell {
@@ -663,16 +665,25 @@ em {
         margin-bottom: 10px;
     }
 
+    .carousel-cell img {
+        width: 81.5%;
+        height: auto;
+        max-height: 320px;
+        max-width: 320px;
+    }
+
     .carousel-cell.is-selected {
         width: 50%;
     }
 
     .carousel-cell.first-cell {
         padding-left: 0;
+        padding-right: 0;
     }
 
     .carousel-cell.last-cell {
         padding-right: 0;
+        padding-left: 0;
     }
 
     .updates {
