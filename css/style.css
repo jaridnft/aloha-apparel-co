@@ -127,7 +127,7 @@ em {
     margin-top: 117px;
 }
 
-.hero-banner-text {                                         /* text-shadow taken from example */
+.hero-banner-text {                      
     color: #fff;
     text-align: center;
     text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
@@ -868,6 +868,14 @@ input[type=submit] {
 
     .hero-banner-text p:nth-child(2) {
         font-size: 66px;
+    }
+
+    .shop {
+        font-size: 38px;
+    }
+
+    .shop a {
+        top: 45%;
     }
 
     .carousel {
