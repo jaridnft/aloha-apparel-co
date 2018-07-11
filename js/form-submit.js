@@ -1,5 +1,9 @@
-    // collect email
-    // listen for subscribe button press
-    //check email
-    if //email bad
-        alert("Please enter a valid email address.");
+$("form").submit(function () {
+    var email = $("form input[type='email']").val();
+    if (email === "") {
+      alert("Please submit a valid email address.");
+    }
+    else {
+      alert("Thanks for subscribing!");
+    }
+});
