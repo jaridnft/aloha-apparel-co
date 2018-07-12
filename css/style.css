@@ -108,6 +108,7 @@ em {
     width: 50%;
     background-color: #fff;
     padding-bottom: .4rem;
+    position: relative;
 }
 
 .header-logo-shopping img {
@@ -118,12 +119,14 @@ em {
 .cart-icon {
     color: white;
     background-color: #e2574c;
-    margin-bottom: 40px;
-    margin-left: -19px;
+    position: absolute;
+    top: 0;
+    right: 0;
     padding-left: 6px;
     padding-right: 6px;
     padding-top: 2px;
     padding-bottom: 4px;
+    box-shadow: 1px 1.5px 1px #969696;
     border-radius: 15px 15px;
     visibility: hidden;
 }
@@ -571,15 +574,6 @@ input[type=submit] {
         width: 20%;
     }
 
-    .cart-icon {
-        margin-left: -6.5%;
-        padding-left: 6.5px;
-        padding-right: 6.5px;
-        padding-top: 2px;
-        padding-bottom: 4px;
-        border-radius: 15px 15px;
-    }
-
     .hero-banner {
         margin-top: 84px;
         height: 400px;
@@ -873,18 +867,17 @@ input[type=submit] {
     .header-logo-shopping {
         width: 190px;
     }
+
     .header-logo-shopping img {
         width: 62px;
         height: 62px;
     }
 
     .cart-icon {
-        margin-left: -1.25%;
-        padding-left: 8px;
-        padding-right: 8px;
-        padding-top: 3px;
+        padding-top: 4px;
         padding-bottom: 5px;
-        margin-bottom: 45px;
+        padding-left: 7px;
+        padding-right: 7px;
     }
 
     .hero-banner {
