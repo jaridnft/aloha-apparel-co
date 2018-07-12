@@ -120,8 +120,8 @@ em {
     background-color: #e2574c;
     margin-bottom: 40px;
     margin-left: -19px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
     padding-top: 2px;
     padding-bottom: 4px;
     border-radius: 15px 15px;
@@ -573,8 +573,8 @@ input[type=submit] {
 
     .cart-icon {
         margin-left: -6.5%;
-        padding-left: 6px;
-        padding-right: 6px;
+        padding-left: 6.5px;
+        padding-right: 6.5px;
         padding-top: 2px;
         padding-bottom: 4px;
         border-radius: 15px 15px;
@@ -880,9 +880,9 @@ input[type=submit] {
 
     .cart-icon {
         margin-left: -1.25%;
-        padding-left: 7px;
-        padding-right: 7px;
-        padding-top: 4px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 3px;
         padding-bottom: 5px;
         margin-bottom: 45px;
     }
