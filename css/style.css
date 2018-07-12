@@ -115,6 +115,19 @@ em {
     cursor: pointer;
 }
 
+.cart-icon {
+    color: white;
+    background-color: #e2574c;
+    margin-bottom: 40px;
+    margin-left: -19px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    border-radius: 15px 15px;
+    visibility: hidden;
+}
+
 .hero-banner {
     background-image: linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25)),url("../images/banner-girl.png"), url("../images/flower-bkgd.jpg");
     background-repeat: repeat, no-repeat;
@@ -557,6 +570,15 @@ input[type=submit] {
         width: 20%;
     }
 
+    .cart-icon {
+        margin-left: -6.5%;
+        padding-left: 6px;
+        padding-right: 6px;
+        padding-top: 2px;
+        padding-bottom: 4px;
+        border-radius: 15px 15px;
+    }
+
     .hero-banner {
         margin-top: 84px;
         height: 400px;
@@ -853,6 +875,15 @@ input[type=submit] {
     .header-logo-shopping img {
         width: 62px;
         height: 62px;
+    }
+
+    .cart-icon {
+        margin-left: -1.25%;
+        padding-left: 7px;
+        padding-right: 7px;
+        padding-top: 4px;
+        padding-bottom: 5px;
+        margin-bottom: 45px;
     }
 
     .hero-banner {
