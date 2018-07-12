@@ -390,6 +390,7 @@ input[type=submit] {
 
 .carousel-cell input[type=submit] {
     background-color:black;
+    outline: none;
 }
 
 .carousel-cell input[type=submit]:hover {
