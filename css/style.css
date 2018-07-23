@@ -19,7 +19,7 @@
 }
 
 html {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 body {
@@ -815,7 +815,7 @@ input[type=submit] {
     }
 
     .fab {
-        width: 30px;
+        width: 28px;
     }
 
     .footer-social a {
