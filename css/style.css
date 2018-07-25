@@ -16,7 +16,6 @@
    top: 5px;
    width: auto;
    z-index: 100000; /* above all content */
-   outline: none;
    text-decoration: none;
    text-transform: uppercase;
    color: #e2574c;
