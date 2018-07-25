@@ -9,6 +9,7 @@ ehthumbs.db
 *.Trashes
 # Ignore npm packages
 node_modules/
+js/total11y.min.js
 # Ignore reference images
 aloha-desktop-1240px.png
 aloha-desktop-stretch.png
