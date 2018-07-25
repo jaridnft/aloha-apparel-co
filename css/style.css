@@ -1,6 +1,6 @@
-/* screen-reader preset for accessibility */
+/* screen-reader classes for accessibility */
 
-.header-screen-reader {
+.screen-reader-text {
    clip: rect(1px, 1px, 1px, 1px);
    position: absolute !important;
    height: 1px;
@@ -8,7 +8,7 @@
    overflow: hidden;
 } 
 
-.header-screen-reader:focus {
+.screen-reader-text:focus {
    clip: auto !important;
    display: block;
    height: auto;
@@ -16,9 +16,18 @@
    top: 5px;
    width: auto;
    z-index: 100000; /* above all content */
+   outline: none;
+   text-decoration: none;
+   text-transform: uppercase;
+   color: #e2574c;
+   font-size: 8px;
 }
 
-/* beginning of my CSS */
+#about[tabindex="-1"]:focus {
+   outline: 0;
+}
+
+/* beginning of visual CSS */
 
 * {
     box-sizing: border-box;
