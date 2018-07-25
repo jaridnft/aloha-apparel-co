@@ -1,14 +1,21 @@
 /* screen-reader preset for accessibility */
 
 .header-screen-reader {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: fixed;
-    width: 1px;
+   clip: rect(1px, 1px, 1px, 1px);
+   position: absolute !important;
+   height: 1px;
+   width: 1px;
+   overflow: hidden;
+} 
+
+.header-screen-reader:focus {
+   clip: auto !important;
+   display: block;
+   height: auto;
+   left: 5px;
+   top: 5px;
+   width: auto;
+   z-index: 100000; /* above all content */
 }
 
 /* beginning of my CSS */
