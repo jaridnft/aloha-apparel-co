@@ -74,11 +74,16 @@ module.exports = {
         include: [imgs],
         exclude: [fonts],
         use: [
-          'file-loader?name=/assets/images/[name].[ext]',
+          {
+            loader: 'file-loader',
+            options: {
+              useRelativePath: process.env.NODE_ENV === 'production',
+              name: '[path][name].[ext]'
+            }
+          },
           {
             loader: 'image-webpack-loader',
             options: {
-              // name: 'assets/images/[name].[ext]',
               mozjpeg: {
                 progressive: true,
                 quality: 65
@@ -102,7 +107,6 @@ module.exports = {
     host: '0.0.0.0',
     port: 3000,
     stats: 'errors-only',
-    publicPath: '/dist/',
     watchOptions: {
       aggregateTimeout: 300,
       poll: 1000,

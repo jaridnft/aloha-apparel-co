@@ -10,8 +10,3 @@ ehthumbs.db
 # Ignore npm packages
 node_modules/
 package-lock.json
-# Ignore Designs
-assets/images/aloha-desktop-1240px.png
-assets/images/aloha-desktop-stretch.png
-assets/images/aloha-mobile.png
-assets/images/aloha-tablet-600px.png
