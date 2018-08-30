@@ -1,0 +1,351 @@
+* {
+  box-sizing: border-box;
+  max-width: 2880px;
+}
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  line-height: 1;
+  font-size: 14px;
+  font-family: 'Raleway Medium', sans-serif;
+  @include phablet {
+    font-size: 16px;
+  }
+}
+
+strong {
+  font-family: 'Playfair Display Bold', serif;
+  font-size: 34px;
+  @include phablet {
+    font-size: 40px;
+  }
+}
+
+em {
+  font-family: 'Playfair Display Italic', serif;
+  font-size: 34px;
+  font-weight: 100;
+  @include phablet {
+    font-size: 40px;
+  }
+}
+
+.hero-banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url('../../assets/images/banner-girl.png'),
+    url('../../assets/images/flower-bkgd.jpg');
+  background-repeat: repeat, no-repeat;
+  background-position: 60% 103%, 50% 60px;
+  background-size: cover, 150px;
+  height: 399px;
+  width: 100%;
+  padding: 56px 0;
+  margin-top: 117px;
+  @include phablet {
+    margin-top: 84px;
+    height: 400px;
+    padding: 72px 0;
+    background-size: 700px, 150px;
+    background-position: 60% 0%, 50% 60px;
+  }
+  @include desktop {
+    height: 550px;
+    margin-top: 97px;
+    background-size: 850px, 250px;
+    background-position: 50% 0%, 50% 60px;
+  }
+  .hero-banner-text {
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    p:first-child {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      margin-top: 0;
+      margin-bottom: 21px;
+      @include phablet {
+        font-size: 1rem;
+        margin-bottom: 25px;
+      }
+      @include desktop {
+        margin-bottom: 20px;
+      }
+    }
+    p:nth-child(2) {
+      font-family: 'Playfair Display Regular', serif;
+      font-size: 1.8rem;
+      margin: 0;
+      @include phablet {
+        font-size: 2.4rem;
+      }
+      @include desktop {
+        font-size: 66px;
+      }
+    }
+  }
+}
+
+.about {
+  height: 230px;
+  padding: 56px 12px;
+  margin-bottom: 4px;
+  text-align: center;
+  font-family: 'Raleway Light', sans-serif;
+  font-size: 16px;
+  @include tablet {
+    height: 263px;
+  }
+  @include phablet {
+    height: 299px;
+  }
+  h3 {
+    margin: 0;
+    margin-bottom: 20px;
+    @include phablet {
+      padding: 6px 0 1px 0;
+      font-size: 44px;
+    }
+  }
+  p {
+    line-height: 30px;
+    margin: 0;
+    @include phablet {
+      font-size: 18px;
+      line-height: 35px;
+      max-width: 680px;
+      margin: auto;
+    }
+  }
+}
+
+.shop {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  color: white;
+  font-size: 23px;
+  @include phablet {
+    font-size: 30px;
+  }
+  @include desktop {
+    font-size: 38px;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 46%;
+    @include phablet {
+      top: 39%;
+    }
+    @include desktop {
+      top: 45%;
+    }
+    &:hover {
+      cursor: pointer;
+      color: wheat;
+    }
+  }
+  .rectangle {
+    width: 100%;
+    padding-bottom: 49.1%;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 97%;
+    @include phablet {
+      width: 50%;
+      padding-bottom: 24.7%;
+      margin: 0 0 8px 0;
+    }
+    &.mens {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.21),
+          rgba(0, 0, 0, 0.21)
+        ),
+        url('../../assets/images/mens-category.jpg');
+      border-bottom-style: solid;
+      border-bottom-color: white;
+      border-bottom-width: 4px;
+      margin-bottom: 0;
+      @include phablet {
+        margin-right: 0;
+        border-right: 4px white solid;
+      }
+    }
+    &.womens {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.21),
+          rgba(0, 0, 0, 0.21)
+        ),
+        url('../../assets/images/womens-category.jpg');
+      border-top: 4px white solid;
+      @include phablet {
+        margin: 0;
+        border-left: 4px white solid;
+      }
+    }
+  }
+  .square {
+    width: 50%;
+    position: relative;
+    padding-bottom: 48.3%;
+    background-size: cover;
+    @include phablet {
+      width: 25%;
+      padding-bottom: 24.7%;
+    }
+    &.trends {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.21),
+          rgba(0, 0, 0, 0.21)
+        ),
+        url('../../assets/images/trends-category.jpg');
+      border-top: 4px white solid;
+      border-right: 4px white solid;
+      border-bottom-width: 4px white solid;
+      @include phablet {
+        margin: 0;
+        border-left: 4px solid white;
+        border-bottom: 4px solid white;
+        border-top-style: none;
+      }
+    }
+    &.glasses {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.21),
+          rgba(0, 0, 0, 0.21)
+        ),
+        url('../../assets/images/glasses-category.jpg');
+      border-top: 4px white solid;
+      border-left: 4px white solid;
+      border-bottom: 4px white solid;
+      @include phablet {
+        margin: 0;
+        border-top-style: none;
+      }
+    }
+    &.sale {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.21),
+          rgba(0, 0, 0, 0.21)
+        ),
+        url('../../assets/images/sale-category.jpg');
+      border-top: 4px white solid;
+      border-bottom: 4px white solid;
+      border-right: 4px white solid;
+      @include phablet {
+        margin: 0;
+        border-right: 4px white solid;
+        border-bottom-style: none;
+      }
+    }
+    &.bags {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.21),
+          rgba(0, 0, 0, 0.21)
+        ),
+        url('../../assets/images/bags-category.jpg');
+      border-top: 4px white solid;
+      border-bottom: 4px white solid;
+      border-left: 4px white solid;
+      @include phablet {
+        margin: 0;
+        border-left: 4px white solid;
+        border-right: 4px white solid;
+        border-bottom-style: none;
+      }
+    }
+  }
+}
+
+.updates {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.18)),
+    url('../../assets/images/wave-bkgd.jpg');
+  background-size: 1500px;
+  background-position: 50% 97%;
+  height: 332px;
+  padding: 56px 12px;
+  color: white;
+  font-size: 16px;
+  text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
+  @include phablet {
+    height: 379px;
+  }
+  @include desktop {
+    background-size: 1500px;
+    background-position: 50% 97%;
+    background-repeat: no-repeat;
+    background-color: #96969660;
+  }
+  h3 {
+    text-align: center;
+    margin-bottom: 21px;
+    margin-top: 0px;
+    text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
+    @include phablet {
+      font-size: 44px;
+      padding-top: 5px;
+    }
+  }
+  p {
+    text-align: center;
+    line-height: 30px;
+    font-family: 'Raleway Light', sans-serif;
+    margin: 0;
+    @include phablet {
+      font-size: 18px;
+      line-height: 35px;
+      margin: auto;
+      max-width: 680px;
+    }
+  }
+  form {
+    text-align: center;
+    padding-left: 29px;
+    padding-right: 29px;
+    margin-top: 30px;
+    @include phablet {
+      padding-top: 35px;
+      max-width: 700px;
+      margin: auto;
+    }
+  }
+  input[type='email'] {
+    width: 98%;
+    padding: 12px 1px 12px 30px;
+    border-radius: 25px;
+    border: none;
+    @include phablet {
+      width: 75%;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+  input[type='submit'] {
+    @include button(#e2574c, #b64036);
+    margin-left: -117px;
+    @include phablet {
+      font-size: 16px;
+      padding-top: 10px;
+      padding-bottom: 9.75px;
+      margin-left: -126px;
+    }
+  }
+  input:focus {
+    outline: none;
+  }
+}

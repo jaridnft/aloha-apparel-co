@@ -1,0 +1,133 @@
+.featured {
+  h3 {
+    font-size: 36px;
+    font-family: 'Playfair Display REgular', serif;
+    text-align: center;
+    padding-top: 20px;
+    @include phablet {
+      margin: 50px 0;
+    }
+  }
+}
+.carousel {
+  text-align: center;
+  border-top-style: none;
+  height: 590px;
+  @include phablet {
+    max-height: 726px;
+    height: 100%;
+  }
+  @include desktop {
+    max-width: 1240px;
+    margin: auto;
+  }
+  .flickity-viewport {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .carousel-cell {
+    width: 100%;
+    margin-top: 22px;
+    margin-bottom: 53px;
+    @include phablet {
+      width: 50%;
+      max-height: 535px;
+      margin-bottom: 15px;
+    }
+    @include desktop {
+      width: 25%;
+      max-width: 310px;
+    }
+    &.first-cell {
+      padding-left: 25px;
+      @include phablet {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+    &.last-cell {
+      padding-right: 25px;
+      @include phablet {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+    &.is-selected {
+      padding-left: 28px;
+      padding-right: 28px;
+      @include phablet {
+        width: 50%;
+        padding-left: 0;
+        padding-right: 0;
+      }
+      @include desktop {
+        width: 25%;
+        max-width: 310px;
+      }
+    }
+    img {
+      margin-bottom: 12px;
+      width: 320px;
+      height: auto;
+      @include phablet {
+        width: 81.5%;
+        height: auto;
+        max-height: 320px;
+        max-width: 320px;
+      }
+      @include desktop {
+        width: 246px;
+        height: 246px;
+      }
+    }
+    .featured-headings-product-type {
+      color: #969696;
+      font-size: 11px;
+      margin-top: 0;
+      margin-bottom: 11px;
+      @include phablet {
+        font-size: 12px;
+        margin-bottom: 15px;
+      }
+    }
+    .featured-headings-product-description {
+      font-family: 'Playfair Display Regular', serif;
+      color: #e2574c;
+      font-size: 22px;
+      margin-top: 0;
+      margin-bottom: 20px;
+      @include phablet {
+        font-size: 24px;
+        margin: 10px 0 25px 0;
+      }
+    }
+    .featured-headings-product-price {
+      color: #969696;
+      margin: 0;
+      padding-bottom: 25px;
+    }
+    input[type='submit'] {
+      @include button(black, rgba(0, 0, 0, 0.767));
+    }
+  }
+  .flickity-page-dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #96969681;
+    list-style-type: disc;
+    font-size: 32px;
+    margin-top: 0;
+    padding-left: 70px;
+    @include phablet {
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+    .dot {
+      width: 26px;
+      &.is-selected {
+        color: #050505;
+      }
+    }
+  }
+}
