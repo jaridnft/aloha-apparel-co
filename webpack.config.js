@@ -75,9 +75,11 @@ module.exports = {
         exclude: [fonts],
         use: [
           {
+            loader: 'url-loader'
+          },
+          {
             loader: 'file-loader',
             options: {
-              useRelativePath: process.env.NODE_ENV === 'production',
               name: '[path]/[name].[ext]'
             }
           },
