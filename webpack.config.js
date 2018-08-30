@@ -90,9 +90,6 @@ module.exports = {
               pngquant: {
                 quality: '65-90',
                 speed: 4
-              },
-              gifsicle: {
-                interlaced: false
               }
             }
           }

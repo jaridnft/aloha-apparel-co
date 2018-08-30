@@ -320,7 +320,7 @@ template {
   color: #e2574c;
   font-size: 8px; }
 
-#about[tabindex="-1"]:focus {
+#about[tabindex='-1']:focus {
   outline: 0; }
 
 /* beginning of visual CSS */
@@ -334,14 +334,14 @@ html {
 body {
   line-height: 1;
   font-size: 14px;
-  font-family: "Raleway Medium", sans-serif; }
+  font-family: 'Raleway Medium', sans-serif; }
 
 strong {
-  font-family: "Playfair Display Bold", serif;
+  font-family: 'Playfair Display Bold', serif;
   font-size: 34px; }
 
 em {
-  font-family: "Playfair Display Italic", serif;
+  font-family: 'Playfair Display Italic', serif;
   font-size: 34px;
   font-weight: 100; }
 
@@ -455,7 +455,7 @@ em {
   margin-bottom: 21px; }
 
 .hero-banner-text p:nth-child(2) {
-  font-family: "Playfair Display Regular", serif;
+  font-family: 'Playfair Display Regular', serif;
   font-size: 1.8rem;
   margin: 0; }
 
@@ -467,7 +467,7 @@ em {
   padding-right: 12px;
   margin-bottom: 4px;
   text-align: center;
-  font-family: "Raleway Light", sans-serif;
+  font-family: 'Raleway Light', sans-serif;
   font-size: 16px; }
 
 .about h3 {
@@ -577,7 +577,7 @@ em {
 
 .featured h3 {
   font-size: 36px;
-  font-family: "Playfair Display REgular", serif;
+  font-family: 'Playfair Display REgular', serif;
   text-align: center;
   padding-top: 20px; }
 
@@ -633,7 +633,7 @@ em {
   margin-bottom: 11px; }
 
 .featured-headings-product-description {
-  font-family: "Playfair Display Regular", serif;
+  font-family: 'Playfair Display Regular', serif;
   color: #e2574c;
   font-size: 22px;
   margin-top: 0;
@@ -644,7 +644,7 @@ em {
   margin: 0;
   padding-bottom: 25px; }
 
-input[type="submit"] {
+input[type='submit'] {
   color: white;
   cursor: pointer;
   font-size: 14px;
@@ -654,11 +654,11 @@ input[type="submit"] {
   border-radius: 25px;
   border: none; }
 
-.carousel-cell input[type="submit"] {
+.carousel-cell input[type='submit'] {
   background-color: black;
   outline: none; }
 
-.carousel-cell input[type="submit"]:hover {
+.carousel-cell input[type='submit']:hover {
   background-color: rgba(0, 0, 0, 0.767); }
 
 .updates {
@@ -683,7 +683,7 @@ input[type="submit"] {
 .updates p {
   text-align: center;
   line-height: 30px;
-  font-family: "Raleway Light", sans-serif;
+  font-family: 'Raleway Light', sans-serif;
   margin: 0; }
 
 .updates form {
@@ -692,7 +692,7 @@ input[type="submit"] {
   padding-right: 29px;
   margin-top: 30px; }
 
-.updates input[type="email"] {
+.updates input[type='email'] {
   width: 98%;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -703,16 +703,16 @@ input[type="submit"] {
 .updates input:focus {
   outline: none; }
 
-.updates input[type="email"]::-webkit-input-placeholder {
+.updates input[type='email']::-webkit-input-placeholder {
   font-size: 14px;
-  font-family: "Raleway Light", sans-serif;
+  font-family: 'Raleway Light', sans-serif;
   margin-left: 25px; }
 
-.updates input[type="submit"] {
+.updates input[type='submit'] {
   background-color: #e2574c;
   margin-left: -117px; }
 
-.updates input[type="submit"]:hover {
+.updates input[type='submit']:hover {
   background-color: #b64036; }
 
 .footer {
@@ -722,7 +722,7 @@ input[type="submit"] {
   flex-direction: column;
   flex-flow: column;
   color: white;
-  font-family: "Playfair Display Regular", serif;
+  font-family: 'Playfair Display Regular', serif;
   line-height: 20px;
   background-color: #242424;
   height: 302px;
@@ -924,13 +924,13 @@ input[type="submit"] {
     padding-top: 35px;
     max-width: 700px;
     margin: auto; }
-  .updates input[type="email"] {
+  .updates input[type='email'] {
     width: 75%;
     padding-top: 15px;
     padding-bottom: 15px; }
-  .updates input[type="email"]::-webkit-input-placeholder {
+  .updates input[type='email']::-webkit-input-placeholder {
     font-size: 16px; }
-  .updates input[type="submit"] {
+  .updates input[type='submit'] {
     font-size: 16px;
     padding-top: 10px;
     padding-bottom: 9.75px;
@@ -955,7 +955,7 @@ input[type="submit"] {
     padding-right: 45px;
     width: 50%;
     max-width: 520px;
-    font-family: "Playfare Display Regular", sans-serif;
+    font-family: 'Playfare Display Regular', sans-serif;
     font-weight: 100; }
   .footer-social li {
     width: 110px;
