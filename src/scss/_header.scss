@@ -1,0 +1,125 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 117px;
+  width: 100%;
+  padding: 0.7rem 0.5rem 0.4rem 0.5rem;
+  z-index: 999;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  @include phablet {
+    height: 84px;
+  }
+  @include desktop {
+    height: 97px;
+    padding-top: 16px;
+    padding-bottom: 8px;
+    justify-content: center;
+  }
+  .header-logo-main {
+    flex-wrap: nowrap;
+    width: 50%;
+    padding-bottom: 0.4rem;
+    @include phablet {
+      width: 20%;
+    }
+    @include desktop {
+      width: 190px;
+    }
+    img {
+      width: 120px;
+      display: block;
+      @include desktop {
+        width: 160px;
+        padding-bottom: 5px;
+      }
+    }
+  }
+  .header-nav {
+    flex-wrap: wrap;
+    order: 1;
+    width: 100%;
+    border-top: 1px solid #d7d7d7;
+    @include phablet {
+      flex-wrap: nowrap;
+      order: 0;
+      width: 50%;
+      border-top: none;
+      font-size: 14px;
+    }
+    @include desktop {
+      font-size: 16px;
+      width: 797px;
+    }
+    ul {
+      list-style-type: none;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-content: center;
+      padding-left: 0;
+      li {
+        padding-right: 0.8rem;
+        padding-left: 0.8rem;
+        @include phablet {
+          padding: 0 14px;
+          font-size: 16px;
+        }
+        @include desktop {
+          padding: 0 25px;
+          font-size: 20px;
+        }
+      }
+    }
+    a {
+      color: #e2574c;
+      text-decoration: none;
+      text-transform: uppercase;
+      &:hover {
+        cursor: pointer;
+        color: #b64036;
+      }
+    }
+  }
+
+  .header-logo-shopping {
+    flex-wrap: nowrap;
+    text-align: right;
+    width: 50%;
+    background-color: #fff;
+    padding-bottom: 0.4rem;
+    position: relative;
+    @include phablet {
+      width: 20%;
+    }
+    @include desktop {
+      width: 190px;
+    }
+    img {
+      height: 50px;
+      cursor: pointer;
+      @include desktop {
+        width: 62px;
+        height: 62px;
+      }
+    }
+    .cart-icon {
+      color: white;
+      background-color: #e2574c;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 2px 6px 4px 6px;
+      box-shadow: 1px 1.5px 1px #969696;
+      border-radius: 15px 15px;
+      visibility: hidden;
+      @include desktop {
+        padding: 4px 7px 5px 7px;
+      }
+    }
+  }
+}

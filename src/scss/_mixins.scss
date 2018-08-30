@@ -1,0 +1,30 @@
+@mixin desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin phablet {
+  @media (min-width: $phablet-width) {
+    @content;
+  }
+}
+@mixin button($color, $hover_color) {
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 7.75px 20.5px;
+  border-radius: 25px;
+  border: none;
+  background-color: $color;
+  outline: none;
+  &:hover {
+    background-color: $hover_color;
+  }
+}
