@@ -4,11 +4,9 @@ $(function() {
     .not("a[href='#']")
     .click(function() {
       $(
-        '#' +
-          $(this)
-            .attr('href')
-            .slice(1) +
-          ''
+        `#${$(this)
+          .attr('href')
+          .slice(1)}`
       ).focus();
     });
 });

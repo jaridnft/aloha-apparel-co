@@ -1,6 +1,8 @@
 const path = require('path');
 const resolve = require('path').resolve;
 const src = resolve(__dirname, 'src');
+const imgs = resolve(__dirname, 'assets/images');
+const fonts = resolve(__dirname, 'assets/fonts');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const autoprefixer = require('autoprefixer');
 const OpenBrowserPlugin = require('open-browser-webpack-plugin');
@@ -58,6 +60,8 @@ module.exports = {
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
+        include: [fonts],
+        exclude: [imgs],
         use: {
           loader: 'file-loader',
           options: {
@@ -66,13 +70,33 @@ module.exports = {
         }
       },
       {
-        test: /\.(png|jpg|svg|gif)$/,
-        use: {
-          loader: 'file-loader',
-          options: {
-            name: 'assets/images/[name].[ext]'
+        test: /\.(gif|png|jpe?g|svg)$/,
+        include: [imgs],
+        exclude: [fonts],
+        use: [
+          'file-loader?name=/assets/images/[name].[ext]',
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              // name: 'assets/images/[name].[ext]',
+              mozjpeg: {
+                progressive: true,
+                quality: 65
+              },
+              // optipng.enabled: false will disable optipng
+              optipng: {
+                enabled: false
+              },
+              pngquant: {
+                quality: '65-90',
+                speed: 4
+              },
+              gifsicle: {
+                interlaced: false
+              }
+            }
           }
-        }
+        ]
       }
     ]
   },

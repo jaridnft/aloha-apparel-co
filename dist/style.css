@@ -427,7 +427,7 @@ em {
   visibility: hidden; }
 
 .hero-banner {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(assets/images/banner-girl.png), url(assets/images/flower-bkgd.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(/assets/images/banner-girl.png), url(/assets/images/flower-bkgd.jpg);
   background-repeat: repeat, no-repeat;
   background-position: 60% 103%, 50% 60px;
   background-size: cover, 150px;
@@ -509,14 +509,14 @@ em {
   background-position: 50% 97%; }
 
 .shop .rectangle.mens {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0.21)), url(assets/images/mens-category.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0.21)), url(/assets/images/mens-category.jpg);
   border-bottom-style: solid;
   border-bottom-color: white;
   border-bottom-width: 4px;
   margin-bottom: 0; }
 
 .shop .square.trends {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0.21)), url(assets/images/trends-category.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0.21)), url(/assets/images/trends-category.jpg);
   border-top-style: solid;
   border-top-color: white;
   border-top-width: 4px;
@@ -528,7 +528,7 @@ em {
   border-bottom-width: 4px; }
 
 .shop .square.glasses {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0.21)), url(assets/images/glasses-category.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0.21)), url(/assets/images/glasses-category.jpg);
   border-top-style: solid;
   border-top-color: white;
   border-top-width: 4px;
@@ -546,7 +546,7 @@ em {
   background-size: cover; }
 
 .shop .square.sale {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0.21)), url(assets/images/sale-category.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0.21)), url(/assets/images/sale-category.jpg);
   border-top-style: solid;
   border-top-color: white;
   border-top-width: 4px;
@@ -558,7 +558,7 @@ em {
   border-right-width: 4px; }
 
 .shop .square.bags {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0.21)), url(assets/images/bags-category.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0.21)), url(/assets/images/bags-category.jpg);
   border-top-style: solid;
   border-top-color: white;
   border-top-width: 4px;
@@ -570,7 +570,7 @@ em {
   border-left-width: 4px; }
 
 .shop .rectangle.womens {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0.21)), url(assets/images/womens-category.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0.21)), url(/assets/images/womens-category.jpg);
   border-top-style: solid;
   border-top-color: white;
   border-top-width: 4px; }
@@ -662,7 +662,7 @@ input[type="submit"] {
   background-color: rgba(0, 0, 0, 0.767); }
 
 .updates {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.18)), url(assets/images/wave-bkgd.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.18)), url(/assets/images/wave-bkgd.jpg);
   background-size: 1500px;
   background-position: 50% 97%;
   height: 332px;
