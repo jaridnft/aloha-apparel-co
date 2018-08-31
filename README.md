@@ -1,4 +1,56 @@
-# Aloha Project
+ # "Aloha Apparel Co." Home Page
+ 
+ #### Author: Jarid Warren [ <jaridwarren@gmail.com> ]
+ 
+Home page for a fictional apparel company, complete with swipable product carousel, fixed header, functional "Add to cart" buttons and a responsive design.
+ 
+ ![alt text](./assets/images/demo.gif "Aloha Apparel Co. Home Page")
+ 
+ ## Motivation
 
-## Author: Jarid Warren
-## Date: 04/07/18
+Learning CSS3 flexbox, jQuery, smooth scrolling with JavaScript, and @font-face.
+ 
+ ## Technology
+ 
+ * JavaScript ES6 / jQuery
+ * NPM / Webpack 
+ * Sass / CSS3
+ * HTML5
+ 
+ ## Code Sample
+ 
+ The following adds a shadow to the header once the user has scrolled from the top of the page. 
+ 
+ ```javascript
+$(function() {
+  $(window).scroll(function() {
+    if ($(window).scrollTop() === 0) {
+      $('header').css({ 'box-shadow': 'none' });
+    } else {
+      $('header').css({ 'box-shadow': '1.5px 3.5px 4px 0 #CCCCCCCC' });
+    }
+  });
+});
+```
+## Setup
+Download or clone repo, then run the following commands in terminal:
+
+**Initialize NPM:**
+
+`> npm init` 
+
+**Install Webpack:**
+
+`> npm install`
+
+**Build project:**
+
+`> webpack`
+
+**Build project for production (compression):**
+
+`> webpack -p`
+
+**Launch dev server to automatically update changes:**
+
+`> webpack-dev-server`
