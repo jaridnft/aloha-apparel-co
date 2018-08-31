@@ -37,8 +37,7 @@ module.exports = {
             }
           },
           {
-            loader: 'sass-loader',
-            options: {}
+            loader: 'sass-loader'
           }
         ]
       },
@@ -63,26 +62,14 @@ module.exports = {
         include: [fonts],
         exclude: [imgs],
         use: {
-          loader: 'file-loader',
-          options: {
-            name: 'assets/fonts/[name].[ext]'
-          }
+          loader: 'url-loader'
         }
       },
       {
-        test: /\.(gif|png|jpe?g|svg)$/,
+        test: /\.(gif|png|jpe?g)$/,
         include: [imgs],
         exclude: [fonts],
         use: [
-          {
-            loader: 'url-loader'
-          },
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[path]/[name].[ext]'
-            }
-          },
           {
             loader: 'image-webpack-loader',
             options: {
@@ -98,6 +85,13 @@ module.exports = {
                 quality: '65-90',
                 speed: 4
               }
+            }
+          },
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8000,
+              name: 'images/[name]_[sha512:hash:base64:7].[ext]'
             }
           }
         ]

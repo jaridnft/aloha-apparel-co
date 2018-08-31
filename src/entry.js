@@ -5,16 +5,3 @@ import './js/form-submit.js';
 import './js/header-shadow.js';
 import './js/smooth-scroll.js';
 import './scss/style.scss';
-// import images that aren't called in js
-import img0 from '../assets/images/cart-icon.svg';
-import img1 from '../assets/images/blue-hipster-backpack.jpg';
-import img2 from '../assets/images/blue-silk-dress.jpg';
-import img3 from '../assets/images/checked-stretch-dress.jpg';
-import img4 from '../assets/images/cotton-blue-shirt.jpg';
-import img5 from '../assets/images/cotton-yellow-tshirt.jpg';
-import img6 from '../assets/images/demin-overall-shorts.jpg';
-import img7 from '../assets/images/pink-dotted-dress.jpg';
-import img8 from '../assets/images/stretch-knit-dress.jpg';
-import img9 from '../assets/images/og-image.png';
-import img10 from '../assets/images/aloha-logo.png';
-import img11 from '../assets/images/aloha-logo.svg';
