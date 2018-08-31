@@ -1,5 +1,5 @@
 {
-  "name": "aloha-project",
+  "name": "aloha-apparel-co",
   "version": "1.0.0",
   "description": "Aloha Apparel header page for e-commerce website",
   "main": "webpack.config.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jaridwarren/aloha-project.git"
+    "url": "git+https://github.com/jaridwarren/aloha-apparel-co.git"
   },
   "author": "Jarid Warren",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jaridwarren/aloha-project/issues"
+    "url": "https://github.com/jaridwarren/aloha-apparel-co/issues"
   },
-  "homepage": "https://github.com/jaridwarren/aloha-project#readme",
+  "homepage": "https://github.com/jaridwarren/aloha-apparel-co#readme",
   "dependencies": {
     "eslint": "^5.4.0",
     "webpack": "^4.17.1",
