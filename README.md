@@ -4,13 +4,9 @@
 
 Home page for a fictional apparel company, complete with swipable product carousel, fixed header, functional "Add to cart" buttons and a responsive design.
 
-### Desktop View Demo
+### Desktop & Mobile View Demo
 
-![alt text](./assets/images/demo.gif 'Aloha Apparel Co. Home Page')
-
-![alt text](./assets/images/mobile-demo.gif 'Aloha Apparel Co. Mobile Home Page')
-
-### Mobile View Demo
+<img src="./assets/images/demo.gif" width="610"><img src="./assets/images/mobile-demo.gif" width="250">
 
 ## Motivation
 
