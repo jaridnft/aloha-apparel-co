@@ -2,7 +2,7 @@
 
 #### Author: Jarid Warren [ <jaridwarren@gmail.com> ]
 
-Home page for a fictional apparel company, complete with swipable product carousel, fixed header, functional "Add to cart" buttons and a responsive design.
+Home page for an apparel company, complete with swipable product carousel, fixed header, functional "Add to cart" buttons and a responsive design.
 
 ### Desktop & Mobile View Demo
 
