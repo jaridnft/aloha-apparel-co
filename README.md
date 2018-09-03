@@ -14,7 +14,7 @@ Learning CSS3 flexbox, jQuery, smooth scrolling with JavaScript, and @font-face.
 
 ## Technology
 
-- <img src="./assets/images/readme-images/js-square-brands.svg" width="20"> JavaScript ES6 / jQuery
+- <img src="./assets/images/readme-images/js-square-brands.svg" width="20" style="display:inline-block;vertical-align:middle;"> JavaScript ES6 / jQuery
 - <img src="./assets/images/readme-images/npm-brands.svg" width="20"> NPM / Webpack
 - <img src="./assets/images/readme-images/sass-brands.svg" width="20"> Sass / <img src="./assets/images/readme-images/css3-alt-brands.svg" width="20"> CSS3
 - <img src="./assets/images/readme-images/html5-brands.svg" width="20"> HTML5
