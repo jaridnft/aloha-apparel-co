@@ -6,7 +6,7 @@ Home page for a fictional apparel company, complete with swipable product carous
 
 ### Desktop & Mobile View Demo
 
-<img src="./assets/images/demo.gif" width="610"><img src="./assets/images/mobile-demo.gif" width="250">
+<img src="./assets/images/readme-images/demo.gif" width="610"><img src="./assets/images/readme-images/mobile-demo.gif" width="250">
 
 ## Motivation
 
@@ -14,10 +14,10 @@ Learning CSS3 flexbox, jQuery, smooth scrolling with JavaScript, and @font-face.
 
 ## Technology
 
-- JavaScript ES6 / jQuery
-- NPM / Webpack
-- Sass / CSS3
-- HTML5
+- <img src="./assets/images/readme-images/js-square-brands.svg" width="20" style="display:inline-block;vertical-align:middle;"> JavaScript ES6 / jQuery
+- <img src="./assets/images/readme-images/npm-brands.svg" width="20"> NPM / Webpack
+- <img src="./assets/images/readme-images/sass-brands.svg" width="20"> Sass / <img src="./assets/images/readme-images/css3-alt-brands.svg" width="20"> CSS3
+- <img src="./assets/images/readme-images/html5-brands.svg" width="20"> HTML5
 
 ## Code Sample
 
