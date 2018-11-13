@@ -59,7 +59,3 @@ Download or clone repo, then run the following commands in terminal:
 
 `> webpack-dev-server`
 
-## @TODO
-
-- [compress images used in](https://medium.com/a-beginners-guide-for-webpack-2/handling-images-e1a2a2c28f8d) `index.html`(currently only `style.css` images are compressed)
-- change main layout to use CSS grid (columns for sections)
