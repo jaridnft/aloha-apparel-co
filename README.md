@@ -1,6 +1,6 @@
 # "Aloha Apparel Co." Home Page
 
-#### Author: Jarid Warren [ <jaridwarren@gmail.com> ]
+#### Author: Jarid [ <jarid@hey.com> ]
 
 Home page for an apparel company, complete with swipable product carousel, fixed header, functional "Add to cart" buttons and a responsive design.
 
